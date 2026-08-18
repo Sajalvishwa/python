@@ -25,3 +25,4 @@ obj = calculator() # creating an object of the class
 print(obj.add(10, 5)) # calling the static method add
 print(obj.subtract(10, 5)) # calling the static method subtract
 print(obj.multiply(10, 5)) # calling the static method multiply
+print(obj.divide(10, 5)) # calling the static method divide
