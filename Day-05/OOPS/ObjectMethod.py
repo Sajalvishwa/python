@@ -2,13 +2,19 @@
 # it first parameter is always self which is a reference to the current instance of the class
 # acces the instance variables and methods of the class using self
 
-class ClassName:
-    def method(self, attribute1, attribute2):
-        self.attribute1 = attribute1
-        self.attribute2 = attribute2
+class student:
 
-object = ClassName() # creating an object of the class
-object.method(10, 20) # calling the method and passing values to it
+    college = "ABC College" # class variable
 
-print(object.attribute1) # accessing the attribute1 of the object
-print(object.attribute2) # accessing the attribute2 of the object
+
+    def method(self,name,cgpa): #object attributes are created using method
+        self.name = name
+        self.cgpa = cgpa
+
+object = student() # creating an object of the class
+object.method("Alice", 8.5) # calling the method and passing values to it
+
+print(object.name) # accessing the name of the object
+print(object.cgpa) # accessing the cgpa of the object
+print(object.college) # accessing the class variable by using the object
+print(student.college) # accessing the class variable by using the class name
