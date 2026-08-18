@@ -1,0 +1,30 @@
+# Hybrid Inheritance
+# It is a combination of multiple types of inheritance
+
+class Animal:
+
+    def eat(self):
+        print("Animal is eating")
+
+
+class Dog(Animal):
+
+    def bark(self):
+        print("Dog is barking")
+
+
+class Cat(Animal):
+
+    def meow(self):
+        print("Cat is meowing")
+
+
+class Pet(Dog, Cat):
+    pass
+
+
+pet = Pet()
+
+pet.eat()      # From Animal
+pet.bark()     # From Dog
+pet.meow()     # From Cat
