@@ -4,8 +4,9 @@
 
 class Student:
 
-    def __init__(self, name, marks):
+    def __init__(self, name,age, marks):
         self.name = name          # Public variable
+        self._age = age          # Protected variable
         self.__marks = marks      # Private variable
 
 
